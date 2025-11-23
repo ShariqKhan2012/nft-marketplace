@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/api/graphql',
-        destination: process.env.GRAPHQL_API_URL || 'http://localhost:3001/graphql',
+        //destination: process.env.GRAPHQL_API_URL || 'http://localhost:3001/graphql',
+        destination: 'http://localhost:3001/graphql',
       },
     ];
   },
