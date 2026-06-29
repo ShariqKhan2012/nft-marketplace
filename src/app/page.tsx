@@ -1,8 +1,8 @@
 "use client"
 
-import { useAccount } from "wagmi"
-import RecentlyListedNFTs from "@/components/RecentlyListed"
+import RecentlyListedNFTs from "@/components/RecentlyListed";
 import { useEffect, useState } from "react";
+import { useAccount } from "wagmi";
 
 export default function Home() {
     const { isConnected, address } = useAccount()

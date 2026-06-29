@@ -1,11 +1,9 @@
 "use client"
 
-import { useState } from "react"
 import CakeNft from "@/components/CakeNft"
-import { useAccount, useChainId } from "wagmi"
-import { ConnectButton } from "@rainbow-me/rainbowkit"
-import { RiCakeLine } from "react-icons/ri"
 import { chainsToContracts } from "@/constants"
+import { ConnectButton } from "@rainbow-me/rainbowkit"
+import { useAccount, useChainId } from "wagmi"
 
 export default function Home() {
     const account = useAccount()
